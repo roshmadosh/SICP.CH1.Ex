@@ -1,4 +1,4 @@
-#1.6
+;1.6
 (define (average a b) (/ (+ a b) 2))
 (define (square s) (* s s))
 (define (abs v) (if (< v 0) (- v) v))
