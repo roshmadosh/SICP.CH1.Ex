@@ -1,0 +1,13 @@
+#Define a procedure that takes three numbers as arguments
+#and returns their sum of the squares of the two larger
+#numbers.
+
+(define (square x) (* x x))
+(define (SumSquare a b) (+ (* a a) (* b b)))
+(define (LargestSum x y z)
+  cond(
+    ((and (<= x y)(<= x z)) (SumSquare y z))
+    ((and (<= y z) (<= y x) (SumSquare x z)))
+    (else (SumSquare x y))
+  )
+)
